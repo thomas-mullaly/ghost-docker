@@ -10,6 +10,14 @@ config = {
       port: '2368'
     },
 
+    database: {
+      client: 'sqlite3',
+      connection: {
+        filename: path.join(process.env.GHOST_CONTENT, '/data/ghost.db')
+      },
+      debug: false
+    },
+
     mail: {
         from: process.env.EMAIL_ADDRESS,
         transport: 'SMTP',
