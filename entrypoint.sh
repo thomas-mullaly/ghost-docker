@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 if [ -d "$GHOST_CONTENT/themes/$GHOST_THEME" ]; then
@@ -26,7 +26,5 @@ if [ ! -e "$GHOST_CONTENT/config.js" ]; then
 fi
 
 ln -sf "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
-
-chown -R user "$GHOST_CONTENT"
 
 npm start
