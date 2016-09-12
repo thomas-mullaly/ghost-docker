@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER Thomas Mullaly <thomas.mullaly@gmail.com>
 
-ENV GHOST_VERSION 0.10.0
+ENV GHOST_VERSION 0.10.1
 ENV GHOST_SOURCE /usr/src/app
 ENV GHOST_CONTENT /var/lib/ghost
 
